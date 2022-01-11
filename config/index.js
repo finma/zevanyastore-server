@@ -10,3 +10,4 @@ export const SERVICE_NAME = process.env.SERVICE_NAME;
 export const MONGO_URL = process.env.MONGO_URL;
 export const JWT_KEY = process.env.SECRET;
 export const rootPath = path.resolve(__dirname, "..");
+export const SECRET_SESSION = process.env.SECRET_SESSION;
