@@ -41,6 +41,9 @@ app.use(
   session({
     store: MongoStore.create({ mongoUrl: MONGO_URL }),
     secret: SECRET_SESSION,
+    resave: false,
+    saveUninitialized: true,
+    cookie: {},
   })
 );
 app.use(flash());
