@@ -1,1 +1,1 @@
-# Zevanyastore App
+# Zevanyastore Server
