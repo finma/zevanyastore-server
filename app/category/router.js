@@ -7,7 +7,7 @@ import {
   viewEdit,
   actionEdit,
   actionDelete,
-} from "./controller";
+} from "./controller.js";
 
 const router = Router();
 
