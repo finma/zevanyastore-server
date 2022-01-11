@@ -1,0 +1,82 @@
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <a href="/" class="brand-link text-center">
+    <span class="brand-text font-weight-light text-center">Zevanyastore</span>
+  </a>
+
+  <div class="sidebar">
+    <nav class="mt-2">
+      <ul
+        class="nav nav-pills nav-sidebar flex-column"
+        data-widget="treeview"
+        role="menu"
+        data-accordion="false"
+      >
+        <li class="nav-item">
+          <a
+            href="/dashboard"
+            class="nav-link <% if (pageName === 'home') { %> active <% } %>"
+          >
+            <i class="nav-icon fas fa-home"></i>
+            <p>Home</p>
+          </a>
+        </li>
+        <li class="nav-header">Master</li>
+
+        <li class="nav-item">
+          <a
+            href="/category"
+            class="nav-link <% if (pageName === 'category') { %> active <% } %>"
+          >
+            <i class="nav-icon far fa-calendar-alt"></i>
+            <p>Category</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="/product"
+            class="nav-link <% if (pageName === 'product') { %> active <% } %>"
+          >
+            <i class="nav-icon fas fa-boxes"></i>
+            <p>Product</p>
+          </a>
+        </li>
+
+        <li class="nav-header">Payment Method</li>
+
+        <li class="nav-item">
+          <a
+            href="/payment"
+            class="nav-link <% if (pageName === 'payment') { %> active <% } %>"
+          >
+            <i class="nav-icon fas fa-money-check-alt"></i>
+            <p>Payment</p>
+          </a>
+        </li>
+        <li class="nav-header">Transaction</li>
+
+        <li class="nav-item">
+          <a
+            href="/transaction"
+            class="
+              nav-link
+              <%
+              if
+              (pageName
+              ===
+              'transaction')
+              {
+              %>
+              active
+              <%
+              }
+              %>
+            "
+          >
+            <i class="nav-icon fas fa-shopping-cart"></i>
+            <p>Transaction</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</aside>

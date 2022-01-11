@@ -1,0 +1,44 @@
+<table id="example2" class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>Product Name</th>
+      <th>Category</th>
+      <th>Stock</th>
+      <th>Price</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for( let i = 0; i < products.length; i++ ) { %>
+    <tr>
+      <td><%= i + 1 %></td>
+      <td><%= products[i].name %></td>
+      <td><%= products[i].category %></td>
+      <td><%= products[i].stock %></td>
+      <td>
+        <%= new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR'
+        }).format(products[i].price) %>
+      </td>
+      <td>
+        <form
+          action="/product/delete/<%= products[i]._id %>?_method=DELETE"
+          method="POST"
+        >
+          <a
+            href="/product/edit/<%= products[i]._id %> "
+            class="btn btn-info btn-sm"
+          >
+            <i class="fas fa-pencil-alt"></i>
+            Edit
+          </a>
+          <button class="btn btn-danger btn-sm">
+            <i class="fas fa-trash"></i>
+            Delete
+          </button>
+        </form>
+      </td>
+    </tr>
+    <% } %>
+  </tbody>
+</table>

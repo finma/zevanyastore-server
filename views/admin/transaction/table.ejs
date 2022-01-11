@@ -1,0 +1,62 @@
+<table id="example2" class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>Product Name</th>
+      <th>Category</th>
+      <th>Total Item</th>
+      <th>Total Price</th>
+      <th>Customer</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for( let i = 0; i < transactions.length; i++ ) { %>
+    <tr>
+      <td><%= i + 1 %></td>
+      <td><%= transactions[i].historyProduct.name %></td>
+      <td><%= transactions[i].historyProduct.category %></td>
+      <td><%= transactions[i].totalItem %></td>
+      <td>
+        <%= new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR'
+        }).format(transactions[i].totalPrice) %>
+      </td>
+      <td><%= transactions[i].historyCustomer.name %></td>
+      <td>
+        <% if(transactions[i].status === 'pending' ) { %>
+        <span class="badge badge-warning"><%= transactions[i].status %></span>
+        <% } else if(transactions[i].status === 'success' ) { %>
+        <span class="badge badge-success"><%= transactions[i].status %></span>
+        <% } else { %>
+        <span class="badge badge-danger"><%= transactions[i].status %></span>
+        <%} %>
+      </td>
+      <td>
+        <% if (transactions[i].status === 'pending') { %>
+        <form
+          style="display: inline-block"
+          action="/transaction/status/<%= transactions[i]._id %>?status=failed&_method=PUT"
+          method="POST"
+        >
+          <button class="btn btn-danger btn-sm" type="submit">
+            <i class="fas fa-times-circle"></i>
+            Reject
+          </button>
+        </form>
+        <form
+          style="display: inline-block"
+          action="/transaction/status/<%= transactions[i]._id %>?status=success&_method=PUT"
+          method="POST"
+        >
+          <button class="btn btn-success btn-sm" type="submit">
+            <i class="fas fa-check"></i>
+            Accept
+          </button>
+        </form>
+        <% } %>
+      </td>
+    </tr>
+    <% } %>
+  </tbody>
+</table>
