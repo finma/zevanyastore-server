@@ -1,7 +1,7 @@
 import Customer from "../customer/model";
 import bcryptjs from "bcryptjs";
 import jwt from "jsonwebtoken";
-import { JWT_KEY } from "../../config";
+import { JWT_KEY } from "../../config/index.js";
 
 export const signup = async (req, res) => {
   try {

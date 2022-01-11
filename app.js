@@ -9,7 +9,7 @@ import methodOverride from "method-override";
 import flash from "connect-flash";
 import session from "express-session";
 import MongoStore from "connect-mongo";
-import { MONGO_URL, SECRET_SESSION } from "./config";
+import { MONGO_URL, SECRET_SESSION } from "./config/index.js";
 
 //? WEB
 import userRouter from "./app/user/router";

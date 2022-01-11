@@ -1,6 +1,6 @@
 import Customer from "../customer/model";
 import jwt from "jsonwebtoken";
-import { JWT_KEY } from "../../config";
+import { JWT_KEY } from "../../config/index.js";
 
 export const isLoginAdmin = async (req, res, next) => {
   if (req.session.user === null || req.session.user === undefined) {

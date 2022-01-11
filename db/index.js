@@ -1,5 +1,5 @@
-import mongoose from 'mongoose'
-import { MONGO_URL } from '../config'
+import mongoose from "mongoose";
+import { MONGO_URL } from "../config/index.js";
 
 mongoose.connect(MONGO_URL, {
   useNewUrlParser: true,
@@ -8,4 +8,4 @@ mongoose.connect(MONGO_URL, {
 
 const db = mongoose.connection;
 
-export default db
+export default db;

@@ -2,7 +2,7 @@ import Product from "./model";
 import Category from "../category/model";
 import fs from "fs";
 import path from "path";
-import { rootPath } from "../../config";
+import { rootPath } from "../../config/index.js";
 
 const pageName = "product";
 
