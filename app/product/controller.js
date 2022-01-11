@@ -1,5 +1,5 @@
-import Product from "./model";
-import Category from "../category/model";
+import Product from "./model.js";
+import Category from "../category/model.js";
 import fs from "fs";
 import path from "path";
 import { rootPath } from "../../config/index.js";

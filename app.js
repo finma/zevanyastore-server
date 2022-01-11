@@ -12,20 +12,20 @@ import MongoStore from "connect-mongo";
 import { MONGO_URL, SECRET_SESSION } from "./config/index.js";
 
 //? WEB
-import userRouter from "./app/user/router";
-import dashboardRouter from "./app/dashboard/router";
-import categoryRouter from "./app/category/router";
-import productRouter from "./app/product/router";
-import paymentRouter from "./app/payment/router";
-import transactionRouter from "./app/transaction/router";
-import authRouter from "./app/auth/router";
-import customerRouter from "./app/customer/router";
+import userRouter from "./app/user/router.js";
+import dashboardRouter from "./app/dashboard/router.js";
+import categoryRouter from "./app/category/router.js";
+import productRouter from "./app/product/router.js";
+import paymentRouter from "./app/payment/router.js";
+import transactionRouter from "./app/transaction/router.js";
+import authRouter from "./app/auth/router.js";
+import customerRouter from "./app/customer/router.js";
 
 //? API
-import categoryRouterAPI from "./app/category/router.api";
-import productRouterAPI from "./app/product/router.api";
-import paymentRouterAPI from "./app/payment/router.api";
-import transactionRouterAPI from "./app/transaction/router.api";
+import categoryRouterAPI from "./app/category/router.api.js";
+import productRouterAPI from "./app/product/router.api.js";
+import paymentRouterAPI from "./app/payment/router.api.js";
+import transactionRouterAPI from "./app/transaction/router.api.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 

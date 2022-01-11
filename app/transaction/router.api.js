@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { getTransactions, getDetailTransaction } from "./controller";
-import { isLoginCustomer } from "../middleware/auth";
+import { getTransactions, getDetailTransaction } from "./controller.js";
+import { isLoginCustomer } from "../middleware/auth.js";
 
 const router = Router();
 

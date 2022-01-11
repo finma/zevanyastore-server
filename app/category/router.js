@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { isLoginAdmin } from "../middleware/auth";
+import { isLoginAdmin } from "../middleware/auth.js";
 import {
   index,
   viewCreate,

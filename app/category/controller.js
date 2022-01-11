@@ -1,4 +1,4 @@
-import Category from "./model";
+import Category from "./model.js";
 
 const pageName = "category";
 
@@ -116,13 +116,11 @@ export const getCategories = async (req, res) => {
   try {
     const categories = await Category.find();
 
-    res
-      .status(200)
-      .json({
-        error: 0,
-        message: "success get categories",
-        data: { categories },
-      });
+    res.status(200).json({
+      error: 0,
+      message: "success get categories",
+      data: { categories },
+    });
   } catch (error) {
     res
       .status(500)

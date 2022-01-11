@@ -1,7 +1,7 @@
 import { Router } from "express";
 import multer from "multer";
 import os from "os";
-import { isLoginAdmin } from "../middleware/auth";
+import { isLoginAdmin } from "../middleware/auth.js";
 import {
   index,
   viewCreate,
@@ -9,7 +9,7 @@ import {
   viewEdit,
   actionEdit,
   actionDelete,
-} from "./controller";
+} from "./controller.js";
 
 const router = Router();
 

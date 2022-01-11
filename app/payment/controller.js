@@ -1,4 +1,4 @@
-import Payment from "./model";
+import Payment from "./model.js";
 
 const pageName = "payment";
 

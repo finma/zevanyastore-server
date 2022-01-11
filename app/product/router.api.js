@@ -3,7 +3,7 @@ import {
   getProducts,
   getDetailProduct,
   getProductsBySearch,
-} from "./controller";
+} from "./controller.js";
 
 const router = Router();
 

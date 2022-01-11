@@ -1,4 +1,4 @@
-import Transaction from "./model";
+import Transaction from "./model.js";
 
 const pageName = "transaction";
 

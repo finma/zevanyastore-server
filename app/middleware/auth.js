@@ -1,4 +1,4 @@
-import Customer from "../customer/model";
+import Customer from "../customer/model.js";
 import jwt from "jsonwebtoken";
 import { JWT_KEY } from "../../config/index.js";
 

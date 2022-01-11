@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { isLoginAdmin } from "../middleware/auth";
-import { index } from "./controller";
+import { isLoginAdmin } from "../middleware/auth.js";
+import { index } from "./controller.js";
 
 const router = Router();
 

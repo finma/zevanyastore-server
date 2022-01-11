@@ -1,7 +1,7 @@
-import Category from "../category/model";
-import Product from "../product/model";
-import Customer from "../customer/model";
-import Transaction from "../transaction/model";
+import Category from "../category/model.js";
+import Product from "../product/model.js";
+import Customer from "../customer/model.js";
+import Transaction from "../transaction/model.js";
 
 const pageName = "home";
 

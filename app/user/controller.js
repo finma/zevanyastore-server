@@ -1,4 +1,4 @@
-import User from "./model";
+import User from "./model.js";
 import bcryptjs from "bcryptjs";
 
 const pageName = "user";

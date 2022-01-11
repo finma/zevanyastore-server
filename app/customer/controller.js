@@ -1,6 +1,6 @@
-import Payment from "../payment/model";
-import Product from "../product/model";
-import Transaction from "../transaction/model";
+import Payment from "../payment/model.js";
+import Product from "../product/model.js";
+import Transaction from "../transaction/model.js";
 
 export const createTransaction = async (req, res) => {
   try {

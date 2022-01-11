@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { signup, signin, getUser } from "./controller";
+import { signup, signin, getUser } from "./controller.js";
 import multer from "multer";
 import os from "os";
 
